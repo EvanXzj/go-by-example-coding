@@ -26,4 +26,8 @@ func SortingByFunctions() {
 	sort.Sort(byLength(fruits))
 
 	fmt.Println(fruits)
+
+	// By following this same pattern of creating a custom type,
+	// implementing the three Interface methods on that type, and then calling sort.Sort on a collection of that custom type,
+	// we can sort Go slices by arbitrary functions.
 }
